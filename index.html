@@ -1,1 +1,93 @@
-Hello World!
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Beth Schmidt</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>
+		* { 
+			padding: 0; 
+			margin: 0; 
+		}
+		body { 
+			background-color: #333; 
+		}
+		h1 { 
+			color: rgba(55,55,55,1); 
+			font-family: "brandon-grotesque", sans-serif; 
+			font-size: 24px; 
+			line-height: 32px; 
+			margin-bottom: 22px; 
+			-webkit-font-smoothing: antialiased; 
+		}
+		p { 
+			color: #rgba(55,55,55,1); 
+			font-family: "brandon-grotesque", sans-serif; 
+			font-size: 18px; 
+			line-height: 30px; 
+			margin-bottom: 22px; 
+			-webkit-font-smoothing: antialiased; 
+		}
+		a { 
+			color: rgba(55,55,55,1); 
+			font-weight: 700; 
+			text-decoration: none; 
+			border-bottom: 2px solid rgba(100,100,100,0.3); 
+			padding-bottom: -1px !important; 
+		}
+		a:hover { 
+			color: #FA5B00; 
+			border-bottom: 2px solid rgba(100,100,100,1);
+		 }
+		#about { 
+			width: 380px; 
+			padding: 0 0 0 150px; 
+			margin: 44px 190px 0 auto !important; 
+		}
+		@media (max-width: 767px) {
+			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			background-image { opacity: 0.2; }
+		}
+	</style>
+	<script type="text/javascript" src="//use.typekit.net/rhk4hsd.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>		
+    
+<body>
+<!-- swap out for a logo -->
+<div id="monogram">
+	<!-- <img src="monogram.png"/> -->
+</div>
+
+<!-- swap out for information about yourself -->
+<div id="about">
+	<h1>Beth Schmidt is the founder and Executive Director of <a href="http://wishbone.org">Wishbone.org</a></h1>
+	<p>Beth believes all kids deserve the chance to pursue their passions, no matter what circumstances they were born into.</p>
+	<p>She <a href="http://bschmidt1376.tumblr.com">writes</a> about education and tangential topics, and shares on<a href="http://twitter.com/schmidtea">Twitter</a>.</p>
+	<p>Beth grew up in New England and has lived on five countries on three continents. She currently lives in San Francisco, California, a place where she feels comfortable in her own skin.</p> 
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("bs_bg.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>	
+</html>
